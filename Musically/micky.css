@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    height: 110vh;
+   background-image: url(https://wallpapers.com/images/high/hanuman-floating-in-the-sky-4k-hd-2r3yu5alfnstkzqe.webp);
+background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.music-player{
+    background: rgba(255,255,255,0.25);
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    border: 1px solid rgba(255,255,255,0.125);
+    padding: 25px 35px;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+nav .circle{
+border-radius: 50%;
+width: 40px;
+height: 40px;
+line-height: 40px;
+background: #fff;
+color:rgb(74, 196, 164);
+box-shadow: 0 5px 10px rgba(255,26,26,0.22);
+}
+
+.song-img{
+    width: 170px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 10px 60px  rgb(255, 26, 26,0.22);
+}
+
+.music-player h1{
+    font-size: 20px;
+    font-weight: 400;
+    color: #f0ecec;
+    margin-top: 20px ;
+    text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.3);
+}
+
+.music-player p{
+    font-size: 14px;
+    color: #f0eeee;
+    text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.3);
+}
+
+#progress{
+    -webkit-appearance:none;
+    width:100%;
+    height: 6px;
+    background:#e77722;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+#progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: #e77722;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 5px 5px rgba(255,26,26,0.22);
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls div{
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+    background: #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #e77722;
+    box-shadow: 0 10px 20px rgb(255, 26, 26,0.22);
+    cursor: pointer;
+}
+
+.controls div:nth-child(2){
+    transform: scale(1.5);
+    background: #e77722;
+    color: #fff;
+}
+
+.btn{
+    cursor: pointer;
+    color: #f0ecec;
+}
+
+.anime{
+    animation: rotatePlayer 6s linear infinite;
+}
+    @keyframes rotatePlayer{
+        from{
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }

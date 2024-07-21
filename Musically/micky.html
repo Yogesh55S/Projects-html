@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micky the Player</title>
+    <link rel="stylesheet" href="micky.css">
+    <script src="https://kit.fontawesome.com/8be6f9795a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+<nav>
+    <!--
+    <div class="circle">
+        <i class="fa-solid fa-chevron-left"></i>
+    </div>
+    <div class="circle">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+-->
+</nav>
+<!--image and names-->
+<img src="ram.jpg" class="song-img">
+<h1 id="title">ram Siya ram</h1>
+<p id="artist">Sachet Tandon</p>
+<!-- song -->
+<audio  id="song">
+    <source src="siya.mp3" type="audio/mpeg">
+</audio>
+<!-- Range-or-Like-Buttons-->
+<input onclick="playpause()" type="range" value="0" id="progress">
+<div onclick="like()" id="btn1" class="btn"><i class="fa regular fa-heart"></i></div>
+<!--music control-->
+<div class="controls">
+    <!--Backword-Button-->
+    <div><i class="fa-solid fa-backward" id="prev" title="prev"></i></div>
+    <!--Play-Button-->
+    <div onclick="playpause()" ><i class="fa-solid fa-play" id="icon" title="Play"></i></div>
+    <!--forord-Button-->
+    <div><i class="fa-solid fa-forward" id="next" title="next"></i></div>
+</div>
+        </div>
+    </dic>
+<script src="micky3.js"></script>
+</body>
+</html>
